@@ -40,6 +40,12 @@
             android:layout_height="wrap_content"
             android:text="Showdata" />
 
+        <Button
+        android:id="@+id/Btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera" />
+
 
     </LinearLayout>
 

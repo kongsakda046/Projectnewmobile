@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
  */
 
 public class SignIn extends AppCompatActivity {
-    Button signout,upload_btn,showData;
+    Button signout,upload_btn,showData,Takecamera;
     private FirebaseAuth FirebaseMember;
     TextView username;
 
@@ -34,6 +34,7 @@ public class SignIn extends AppCompatActivity {
         username=(TextView)findViewById(R.id.textView);
         upload_btn=(Button)findViewById(R.id.upload_btn);
         showData=(Button)findViewById(R.id.Btn_showdata);
+        Takecamera=(Button)findViewById(R.id.Btn_camera);
 
 
 
@@ -62,8 +63,15 @@ public class SignIn extends AppCompatActivity {
         showData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //  startActivity(new Intent(getApplicationContext(),Showdata.class));
+              startActivity(new Intent(getApplicationContext(),Showdata.class));
             }
         });
+        Takecamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Takecamera.class));
+            }
+        });
+
     }
 }
