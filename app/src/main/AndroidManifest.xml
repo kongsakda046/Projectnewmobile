@@ -19,14 +19,12 @@
             </intent-filter>
         </activity>
         <activity
-        android:name=".Takecamera"
-        android:label="@string/title_activity_takecamera"
-        android:theme="@style/AppTheme.NoActionBar" />
+        android:name=".Takecamera" />
 
         <activity android:name=".SignIn" />
         <activity android:name=".Uploadinfo"/>
         <activity android:name=".Showdata" />
-        <activity android:name=".Takecamera" />
+
     </application>
 
 </manifest>
